@@ -20,19 +20,19 @@
   
   body.phase1{
     position:relative; 
-    background-color: #0000aa;
+    background-color: #FF0000;
     
   }
   
   body.phase2{
     position:relative; 
-    background-color: #440044;
+    background-color: #FFFFFF;
     color: yellow;
     
   }
   
   body.phase3 {
-    background-color: #179900;
+    background-color: #A020F0;
     color: white;
   }
 
