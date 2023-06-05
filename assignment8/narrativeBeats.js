@@ -6,14 +6,14 @@ beats = [
 
   {
     triggered: false,
-    test: function(manager, data){        return data.elapsedTime > 60   }, 
+    test: function(manager, data){        return data.elapsedTime > 15   }, 
     unlock: function(manager, data){      data.intensity = 0.001;          },  
     report: function(manager, data){return}
   },
   
     {
     triggered: false,
-    test: function(manager, data){        return data.timeElapsed > 80  }, 
+    test: function(manager, data){        return data.timeElapsed > 30 }, 
     unlock: function(manager, data){      manager.setPhase("phase2");
                                           data.intensity = 0.01;},  
     report: function(manager, data){return}
@@ -21,7 +21,7 @@ beats = [
   
     {
     triggered: false,
-    test: function(manager, data){        return data.timeElapsed > 100  }, 
+    test: function(manager, data){        return data.timeElapsed > 75  }, 
     unlock: function(manager, data){      manager.setPhase("phase3")
                                           data.intensity = 0.1;},  
     report: function(manager, data){return}
