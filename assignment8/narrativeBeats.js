@@ -7,7 +7,7 @@ beats = [
   {
     triggered: false,
     test: function(manager, data){        return data.elapsedTime > 15   }, 
-    unlock: function(manager, data){      data.intensity = 0.001;          },  
+    unlock: function(manager, data){      data.intensity = 0.1;          },  
     report: function(manager, data){return}
   },
   
@@ -15,7 +15,7 @@ beats = [
     triggered: false,
     test: function(manager, data){        return data.timeElapsed > 30 }, 
     unlock: function(manager, data){      manager.setPhase("phase2");
-                                          data.intensity = 0.01;},  
+                                          data.intensity = 0.3;},  
     report: function(manager, data){return}
   },
   
@@ -23,7 +23,7 @@ beats = [
     triggered: false,
     test: function(manager, data){        return data.timeElapsed > 75  }, 
     unlock: function(manager, data){      manager.setPhase("phase3")
-                                          data.intensity = 0.1;},  
+                                          data.intensity = 0.6;},  
     report: function(manager, data){return}
   },
 
@@ -31,7 +31,7 @@ beats = [
     triggered: false,
     test: function(manager, data){        return data.timeElapsed > 130   }, 
     unlock: function(manager, data){      manager.setPhase("phase4");
-                                          data.intensity = 0.5;},  
+                                          data.intensity = 0.8;},  
     report: function(manager, data){return}
   },
 
@@ -39,7 +39,7 @@ beats = [
     triggered: false,
     test: function(manager, data){        return data.timeElapsed > 200  }, 
     unlock: function(manager, data){      manager.setPhase("phase5");
-                                          data.intensity = 1.0;},  
+                                          data.intensity = 1.4;},  
     report: function(manager, data){return}
   },
   
