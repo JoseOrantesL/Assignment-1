@@ -1,0 +1,89 @@
+  
+  
+  
+  body {
+    transition: background-color linear 1s;
+    
+  }
+  
+  h1 {
+    color:#beef;
+    font-size: 50pt;
+    
+  }
+  
+  strong {
+    color: #adadad;
+    font-size: 17.777pt;
+    
+  }
+  
+  body.phase1{
+    position:relative; 
+    background-color: #0000aa;
+    
+  }
+  
+  body.phase2{
+    position:relative; 
+    background-color: #440044;
+    color: yellow;
+    
+  }
+  
+  body.phase3 {
+    background-color: #179900;
+    color: white;
+  }
+
+  body.phase4 {
+    background-color: #ffffff06;
+    color: white;
+  }
+
+  body.phase5 {
+    background-color: #a45b9a;
+    color: white;
+  }
+  
+iframe{
+  
+  mix-blend-mode: difference;
+  
+}
+
+#smile {
+  pointer-events: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./smiledog.png");
+  mix-blend-mode: difference;
+  object-fit: fill;
+  
+  opacity: 0.0;
+  transition: opacity linear 10s;
+  
+  z-index: 5;
+}
+
+#smile.phase1 {
+    opacity: 0.1
+  }
+
+#smile.phase2 {
+    opacity: 0.2
+  }
+
+#smile.phase3 {
+    opacity: 0.4
+  }
+
+#smile.phase4 {
+    opacity: 0.8
+  }
+
+#smile.phase5 {
+    opacity: 1.2
+  }
+
